@@ -2,13 +2,19 @@
 // Copyright 2022 by Johannes Findeisen <you@hanez.org>
 // Licensed under the terms of the MIT license.
 
-// For using the Blinker library you have to install it from:
+// Required to make Passkey a HID device. You need to install it.
+// You can define your keyboard layout in:
+// ~/.arduino15/packages/digistump/hardware/avr/1.7.5/libraries/DigisparkKeyboard/keylayouts.h
+// By default US keyboard layout is used.
+#include <DigiKeyboard.h>
+
+// Passkey includes the Blinker library from:
 // https://github.com/MajenkoLibraries/Blinker
-// Since the code is included in Passkey you easily can just copy
-// Blinker/src/Blinker.cpp and Blinker/src/Blinker.h to the root of 
-// Passkey.
+// Since the code is included in Passkey you do not have 
+// to do anything to compile Passkey.
+// Blinker is licensed under the BSD-3-Clause license.
+// See Blinker.LICENSE for the full license of Blinker.
 #include "Blinker.h"
-#include "DigiKeyboard.h"
 
 // The button pin
 #define BUTTON_PIN 0

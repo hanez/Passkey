@@ -1,4 +1,4 @@
-#include <Blinker.h>
+#include "Blinker.h"
 
 Blinker::Blinker(int pin) {
     _blinkPin = pin;
