@@ -42,6 +42,7 @@ void setup() {
 
   // Set blink effect (ON, OFF) in milliseconds
   blinker.setDelay(25, 9075);
+  // Start LED blink effect
   blinker.start();
 
   // Initialize HID
@@ -56,7 +57,7 @@ void setup() {
 }
 
 void loop() {
-  // Start LED blink effect
+  // Invoke the Blinker
   blinker.blink();
 
   // Read button state
